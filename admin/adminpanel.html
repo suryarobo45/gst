@@ -238,7 +238,7 @@
                     </div>
                 </div>
                 <div class="co-lg-12">
-                    <div class="row mt-3">
+                    <div class="row mt-5">
                         <div class="col-lg-3 col-12">
                             <div class="box" id="box-content"><span>daily visitors<br></span><h3>9,100</h3><p>27% since last month</p>
                                 <i class="fa-solid fa-eye fa-xl" id="eye"></i> 
@@ -362,50 +362,100 @@
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Register/Login</h4>
+                    <h3 class="modal-title">Access Request Register</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
     
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <i class="fa-solid fa-user-pen" style="color: #3f0101;font-size: 2em;margin-right:5px !important;"></i><input id="Input-Focus" class="first-input" type="text"  placeholder="Name" required>
-                                <label for="text">Employee Name</label><br>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10 ">
+                                <div class="mb-3">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-solid fa-user-pen fa-xl" style="color: #ffffff;"></i></span>
+                                        <input id="Input-Focus" class="first-input form-control" type="text" placeholder="Name" required>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-md-1"></div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <i class="fa-solid fa-envelope" style="color: #3f0101;font-size: 2em;margin-right: 15px !important;"></i><input id="Input-Focus"  type="email" name="email" id="" required>
-                                 <label for="email" style="padding-right: 60px;">Email</label>
+                    
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <div class="mb-2">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-solid fa-envelope fa-xl" style="color: #ffffff;"></i></span>
+                                        <input id="Input-Focus" type="email" name="email" placeholder="Email" class="form-control" required>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-md-1"></div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="mb-3 ">
-                                <i class="fa-regular fa-user" style="color: #3f0101;font-size: 2em;margin-right: 5px !important;"></i><input id="Input-Focus"  type="name" name="email"style="margin-left: 30px;" id="" required>
-                                 <label for="email">user name</label>
+                        <div class="row">
+                            <div class="col-md-11 col-11">
+                                <div class="select-section">
+                                    <div class="input-group">
+                                        <span class="input-group-text" style="margin-left: 5.5em;"><i class="fa-solid fa-hand-point-right fa-xl" style="color: #ffffff;"></i></span>
+                                        <select size="1">
+                                            <option class="first-select"  value=""><i class="fa-regular fa-hand-point-right"></i>Select admin control access</option>
+                                            <option value="1">Management Administrator</option>
+                                            <option value="2">Accountant Administrator</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-md-1"></div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <i class="fa-solid fa-eye"  style="color:#3f0101;font-size: 2em !important;"></i><input id="Input-Focus" type="password" style="margin-left: 30px;" name="" id="" required>
-                                 <label for="password">Password</label>
+                    
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <div class="mb-3 mt-5">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i></span>
+                                        <input id="Input-Focus" class="input form-control" type="text" name="username" placeholder="Username" required>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-md-1"></div>
                         </div>
-                    </div>
+                    
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <div class="mb-3">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-solid fa-eye fa-xl" style="color:#ffffff;"></i></span>
+                                        <input id="Input-Focus" type="password" placeholder="Password" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <button class="btn signup-btn">Sign Up</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
                 </div>
     
                 <!-- Modal footer -->
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
     
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <script>
+   <!-- <script>
     const labels = document.querySelectorAll("label");
 
 labels.forEach(label => {
@@ -417,6 +467,6 @@ labels.forEach(label => {
     .join('');
   console.log(label.innerHTML);
 });
-   </script>
+   </script> -->
 </body>
 </html>
