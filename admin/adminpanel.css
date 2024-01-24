@@ -457,24 +457,34 @@ div.logo-card img{
 .rotate-icon.rotate {
     transform: rotate(-90deg);
 }
+#myModal::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: -1;
+}
 
 .modal-title{
   padding-top: 1em;
-  padding-left: 40%;
+  padding-left: 32%;
   text-transform: capitalize;
   color: #690c0c;
   font-family:fantasy;
+  letter-spacing: 0.1px;
 }
-.first-input{
+/* .first-input{
   margin-left: 10px;
-}
+} */
 .modal-body{
-  align-items: center;
-  text-align: center;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
 }
 label span{
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 1rem;
   /* position: relative; */
   bottom: -1.2rem;
   transition: transform 200ms ease-in-out;
@@ -482,59 +492,109 @@ label span{
 label{
   padding-left: 30px;
 }
-
+/* .input{
+  margin-left: 1em !important;
+} */
 input {
-  /* position: relative; */
+  /* position:relative; */
   margin-bottom: 2rem;
   padding: 0.5rem 0;
   background-color: transparent;
   outline: none;
   border: unset;
   border-bottom: 1.5px solid rgb(48, 1, 1);
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   letter-spacing: 1.5px;
   color: rgb(73, 9, 9);
-  z-index: 1;
+  /* z-index: 1; */
+}
+#Input-Focus{
+  background-color: rgb(199, 190, 190) !important;
+  width: 300px;
+ height: 43px;
+  border-top-right-radius: 20px;
+  
+}
+#Input-Focus::placeholder{
+  color: #000000;
 }
 
-/* button {
-  display: inline-block;
-  margin: 1rem 0;
-  padding: 0.75rem;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  border-radius: 0.25em;
-  font-size: 1rem;
-  letter-spacing: 1.5px;
-  font-weight: 500;
-  transition: all 100ms ease-in-out;
-  background-color: rgb(225,225,255);
-}
 
-button:hover {
-  background-color: rgb(235,235,235);
-}
-
-a {
-  color: rgb(235, 235, 235);
-}
-
-a:hover {
-  color: rgb(215, 215, 215);
-}
-
-p {
-  text-align: center;
-} */
 
 #Input-Focus:focus, #Input-Focus:valid {
-  border-bottom: 2px solid rgb(44, 0, 0);
+  border: 1px solid rgb(44, 0, 0);
+  color: #000000;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) !important;
 }
 
-input:focus + label span, input:valid + label span {
-  color: rgb(139, 28, 28);
-  transform: translateY(-1rem);
+.signup-btn{
+  background-color: #470700;
+  color: white;
+  padding: 10px 50px;
+}
+.signup-btn:hover{
+  background-color: #470700;
+  color: white;
+  padding: 10px 50px;
+}
+.select-section {
+  display: flex;
+  align-items: center;
+  margin-left: -2em;
+}
+
+.select-section select {
+  flex: 2;
+  box-sizing: border-box;
+}
+
+select{
+  width: 400px;
+  max-width: 100%;
+  overflow-y: auto;
+  cursor: pointer;
+  padding: 5px 25px;
+  appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: 0.001px solid rgb(134, 115, 115);
+  border-radius: 20px;
+  color: #020202;
+  font-size: 17px;
+  /* box-shadow: -3px 3px 5px 0px rgba(44, 8, 8, 0.1); */
+}
+select option{
+  padding: 10px 20px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  border-radius: 12px;
+  background-color: rgb(238, 238, 238);
+  cursor: pointer;
+}
+select option:hover{
+  background-color: rgb(177, 165, 165);
+}
+select option:checked{
+  box-shadow: 0 0 10px 100px #640000 inset;
+}
+select::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+	border-radius: 12px;
+}
+
+select::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+select.fadeIn {
+  animation: fadeInDown 0.2s;
+}
+select.fadeOut{
+  animation: fadeInUp 0.2s;
 }
 
 
