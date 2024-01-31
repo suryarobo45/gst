@@ -1,0 +1,335 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+  inset: 0;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+body {
+  /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,22,131,1) 0%, rgb(63, 84, 102) 90% ); */
+  /* background-color: #fff3f3; */
+  background-image: url('media/GST-login-bg02.png');
+  /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(174, 160, 138, 0.52) 0%, rgba(174, 160, 138, 0.52) 38.6%, rgba(174, 160, 138, 0.52) 72.1%, rgba(211,177,125,0.24) 94.7% ); */
+  position: relative;
+  z-index: -1000;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  justify-content: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+#login-container {
+  /* border-radius: 20%; */
+  background-size: cover;
+  padding-left: 10%;
+}
+
+#first-outer {
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.3); */
+  margin-top: -30px;
+  padding: 3em;
+  height: 650px;
+  background-color: #a53e3e;
+  /* background-image: linear-gradient( 109.6deg,  rgba(83,5,5,1) 11.2%, rgb(26, 2, 2) 91.1% ); */
+  background-color: #A07855FF;
+
+
+  border-top-right-radius: 200px;
+  background-size: cover;
+  border-radius: 10px 700px 10px 0;
+  /* border-radius: 0 100% 100% 50%; */
+}
+
+.welcome-span {
+  font-size: 1.3em;
+  /* background-image: url('Rathna_Group_text.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 600px; */
+}
+
+.welcome-span2 {
+  font-size: 5em;
+  margin-left: -5em;
+  margin-top: 5.5em !important;
+  position: absolute;
+  left: 410px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #000000;
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.2),
+    -2px -2px 4px rgba(255, 255, 255, 0.2);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.rathna-logo {
+  margin-top: 200px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+
+
+
+.welcome-head {
+
+  color: #D4B996FF;
+  /* background: -webkit-linear-gradient(#050831, #32566b);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  margin-top: 3em !important;
+
+
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 4em;
+
+
+}
+
+
+
+
+
+.wel-para {
+  color: #faf4f4;
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: capitalize;
+
+  margin-top: -70px;
+  padding-left: 6em;
+}
+
+.login-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  outline: none;
+  transition: all 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: #111110;
+  transition: all 0.2s;
+}
+
+html {
+  height: 100%;
+}
+
+/* #login-container {
+  background-image: url(GST-login-bg02.png);
+  
+} */
+
+.login-card {
+  padding: 42px 52px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 90%;
+
+  /* display: flex; */
+  height: 100%;
+  /* max-height: 740px;
+  max-width: 350px; 
+  /* flex-direction: column; */
+}
+
+/* .login-card-content {
+  flex-grow: 2;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+} */
+
+.login-card-footer {
+  padding: 32px 0;
+}
+
+h2 .highlight {
+  color: #fdc654;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+h3 {
+  color: #f7a6ad;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+
+
+.header {
+  border-radius: 40px;
+  width: 230px;
+  height: 190px;
+  background-image: url('media/Rathna_Group_Logo.png');
+  background-size: cover;
+  object-fit: cover;
+  margin-left: 55px;
+  position: relative;
+  margin-bottom: 10px;
+
+}
+
+button {
+ 
+  display: block;
+  background-image: linear-gradient(109.6deg, rgba(83, 5, 5, 1) 11.2%, rgba(0, 0, 0, 1) 91.1%);
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 32px;
+  outline: none;
+}
+
+
+.form {
+  background-color: #A07855FF;
+  border-radius: 20px;
+  padding: 40px 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.3);
+  
+}
+
+.form-field {
+  margin-bottom: 16px;
+  width: 100%;
+  position: relative;
+}
+
+.form-field .icon {
+  position: absolute;
+  background: white;
+  color: #d61e2d;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.form-field .icon:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-left: 12px solid white;
+  position: absolute;
+  top: 8px;
+  right: -20px;
+}
+h2.recover-head{
+padding-top: 3.5em;
+padding-left: 30px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+
+font-size: 2.5em;
+color: #ffffff;
+}
+
+.form-field input {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 100%;
+  border-radius: 16px;
+  height: 36px;
+  background: #D4B996FF;
+  color: rgb(12, 12, 12);
+  outline: none;
+  transition: all 0.2s;
+}
+
+.form-field input::placeholder {
+  color: rgb(14, 14, 14);
+}
+
+.form-field input:hover,
+.form-field input:focus {
+  background: white;
+  color: #d61e2d;
+  transition: all 0.2s;
+}
+
+.form-field input::placeholder {
+  letter-spacing: 1px;
+
+}
+
+.form-field input:hover::placeholder {
+  color: #000000b8;
+  letter-spacing: 2px;
+}
+
+.forget-link {
+  color: rgb(11, 11, 11);
+  margin-top: -90px !important;
+  position: relative;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+@media (max-width:996px){
+  #first-outer{
+    display: none;
+  }
+  .login-card{
+    display: flex;
+    align-items: center;
+  }
+  html{
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+
+}
+@media (max-width:996px){
+  form{
+    width: 150% !important;
+   margin-left: -4em !important;
+  }
+  div.header{
+  margin-left: -3em;
+  }
+}

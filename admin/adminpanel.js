@@ -11,19 +11,19 @@
 
 // });
 
-$(document).ready(function () {
-  // Hide all sub-menu ul elements initially
-  $('.sub-menu ul').hide();
+// $(document).ready(function () {
+//   // Hide all sub-menu ul elements initially
+//   $('.sub-menu ul').hide();
 
-  // Add a click event listener to each ".sub-menu a" element
-  $(".sub-menu a").click(function (event) {
-    // Prevent the default behavior of the anchor tag
-    event.preventDefault();
+//   // Add a click event listener to each ".sub-menu a" element
+//   $(".sub-menu a").click(function (event) {
+//     // Prevent the default behavior of the anchor tag
+//     event.preventDefault();
 
-    // Find the corresponding ul element and toggle its visibility
-    $(this).siblings("ul").slideToggle("100");
-  });
-});
+//     // Find the corresponding ul element and toggle its visibility
+//     $(this).siblings("ul").slideToggle("100");
+//   });
+// });
 
 
 //mobile hamburger toggle
@@ -69,3 +69,93 @@ $(document).ready(function() {
       $("#hide").css("background-color", newColor);
   });
 });
+
+// select option script
+
+// let select = document.querySelector('select');
+
+// select.addEventListener('focus', () => {
+//   select.size = 5; 
+//   select.classList.add('fadeIn'); 
+//   select.classList.remove('fadeOut');
+//   select.style.backgroundColor = '#FFF';
+// });
+
+// select.addEventListener('blur', () => {
+//   select.size = 1; 
+//   select.classList.add('fadeOut');
+//   select.classList.remove('fadeIn');
+//   select.style.backgroundColor = '#FFF';
+// });
+
+// select.addEventListener('change', () => {
+//   select.size = 1; 
+//   select.blur();
+//   select.style.backgroundColor = '#FFF';
+// });
+
+// select.addEventListener('mouseover', () => {
+//   if(select.size == 1){
+//      select.style.backgroundColor = 'rgb(247, 247, 247)';
+//   }
+// });
+// select.addEventListener('mouseout', () => {
+//   if(select.size == 1){
+//      select.style.backgroundColor = '#FFF';
+//   }
+// });
+
+
+document.getElementById('emailForm').addEventListener('submit', function(event) {
+  // Check email validity using JavaScript
+  var emailInput = document.getElementById('Input-Focus');
+  if (!emailInput.checkValidity()) {
+      alert('Please enter a valid email address.');
+      event.preventDefault(); // Prevent form submission
+  }
+});
+
+// select control accesess script
+let select = document.querySelector("select");
+
+    select.addEventListener("focus", () => {
+        select.size = 5;
+        select.classList.add("fadeIn");
+        select.classList.remove("fadeOut");
+        select.style.backgroundColor = "#FFF";
+    });
+
+    select.addEventListener("blur", () => {
+        select.size = 1;
+        select.classList.add("fadeOut");
+        select.classList.remove("fadeIn");
+        select.style.backgroundColor = "#FFF";
+    });
+
+    select.addEventListener("change", () => {
+        select.size = 1;
+        select.blur();
+        select.style.backgroundColor = "#FFF";
+    });
+
+    select.addEventListener("mouseover", () => {
+        if (select.size == 1) {
+            select.style.backgroundColor = "rgb(247, 247, 247)";
+        }
+    });
+    select.addEventListener("mouseout", () => {
+        if (select.size == 1) {
+            select.style.backgroundColor = "#FFF";
+        }
+    });
+
+
+    // function Showreddot(){
+    //   const reddot = document.getElementById("redDot");
+    //   reddot.style.display = "block";
+    // }
+    function showRedDot() {
+      var redDot = document.getElementById("redDot");
+      redDot.style.display = "none";
+  }
+
