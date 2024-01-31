@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ratna Group GST Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <style>
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    overflow: hidden;
+    inset: 0;
+  }
+  body{
+    background-image: url('media/GST-login-bg02.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+  .first-half{
+    background-color: #A07855FF;
+    height: 200%;
+    border-radius: 10px 700px 10px 0;
+  }
+  .rathna-text-img{
+    margin-top: 170px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  margin-left: 50px;
+  }
+  h1.gst-head{
+    color: #000000;
+    text-shadow:
+      2px 2px 4px rgba(0, 0, 0, 0.2),
+      -2px -2px 4px rgba(255, 255, 255, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 5em;
+  padding-left: 70px;
+  padding-top: 20px;
+  }
+  img.rathna-logo{
+    padding-top: 100px;
+    margin-left: 70px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    outline: none;
+    transition: all 0.2s;
+  }
+  
+  a:hover,
+  a:focus {
+    color: #fdc654;
+    transition: all 0.2s;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  .login-card {
+    padding: 20px 20px;
+  
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    
+    max-height: 740px;
+    max-width: 350px;
+    background-color: #A07855FF;
+    flex-direction: column;
+  }
+  
+  
+  
+  
+  
+  h2 .highlight {
+    color: #fdc654;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  h3 {
+    color: #d61e2d;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+  }
+  
+  .header {
+    margin-bottom: 50px;
+  }
+  
+  
+  
+  button {
+    background: white;
+    display: block;
+    color: #d61e2d;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 32px;
+    outline: none;
+  }
+  
+  .form-field {
+    margin-bottom: 16px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .form-field .icon {
+    position: absolute;
+    background: white;
+    color: #d61e2d;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  
+  .form-field .icon:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-left: 12px solid white;
+    position: absolute;
+    top: 8px;
+    right: -20px;
+  }
+  
+  .form-field input {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 100%;
+    border-radius: 16px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    transition: all 0.2s;
+  }
+  
+  .form-field input::placeholder {
+    color: white;
+  }
+  
+  .form-field input:hover,
+  .form-field input:focus {
+    background: white;
+    color: #d61e2d;
+    transition: all 0.2s;
+  }
+  
+  .form-field input:hover::placeholder {
+    color: #d61e2d;
+  }
+<style/>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row ">
+                <div class="col-lg-7">
+                    <div class="first-half">
+                        <img class="rathna-text-img" src="media/Rathna_Group_text.png" width="400px" alt="">
+                        <h1 class="gst-head">GST Portal</h1>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="second-half p-2">
+                        <img class="rathna-logo" width="200px" src="media/Rathna_Group_Logo.png" alt="">
+                    </div>
+                    <div class="login-card">
+                        <div class="login-card-content">
+                          <div class="form">
+                            <div class="form-field username">
+                              <div class="icon">
+                                <i class="far fa-user"></i>
+                              </div>
+                              <input type="text" placeholder="Username">
+                            </div>
+                            <div class="form-field password">
+                              <div class="icon">
+                                <i class="fas fa-lock"></i>
+                              </div>
+                              <input type="password" placeholder="Password">
+                            </div>
+                            <button type="submit">
+                              Login
+                            </button>
+                          </div>
+                        </div>
+                        <div class="login-card-footer">
+                          <a href="">Forgot password?</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>
