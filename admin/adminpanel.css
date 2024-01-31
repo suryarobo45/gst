@@ -52,7 +52,7 @@ div.logo-card img{
   }
   
   .input-group-text{
-    background-color: rgb(131, 52, 15) !important;
+    background-color: rgb(92, 6, 6) !important;
     width: 60px;
     height: 40px;
     margin-left: -10px;
@@ -117,6 +117,7 @@ div.logo-card img{
   margin-left: 19px;
   float: right !important;
 }
+
 .side-option-1{
     padding-top: 10px 40px;
     display: flex;
@@ -189,7 +190,7 @@ div.logo-card img{
   .box:hover{
     transform: scale(1.10);
   }
-  .fa-eye{
+  #eye{
     float: right; 
     padding-top: -50px !important;
     padding-right: 20px;
@@ -280,7 +281,7 @@ div.logo-card img{
     border-radius: 4px; 
     }
     .offcanvas-title{
-      background: linear-gradient(to right, #7e9c7e, #70c97d, #325e2c);
+      background: linear-gradient(to right, #c77d7d, #a81515, #3d0404);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-size: 35px;
@@ -327,7 +328,8 @@ div.logo-card img{
     display: none;
   }
   #menu-wrapper {
-      overflow: hidden;
+      overflow-x: scroll;
+      overflow-y: hidden;
       max-width: 100%;
       cursor: pointer;
   }
@@ -417,7 +419,7 @@ div.logo-card img{
       content: '';
       display: block;
       position: absolute;
-      top: 50%;
+      top: 250%;
       right: 30px;
       width: 15px;
       height: 2px;
@@ -455,6 +457,86 @@ div.logo-card img{
 .rotate-icon.rotate {
     transform: rotate(-90deg);
 }
+
+.modal-title{
+  padding-top: 1em;
+  padding-left: 40%;
+  text-transform: capitalize;
+  color: #690c0c;
+  font-family:fantasy;
+}
+.first-input{
+  margin-left: 10px;
+}
+.modal-body{
+  align-items: center;
+  text-align: center;
+}
+label span{
+  display: inline-block;
+  font-size: 1.25rem;
+  /* position: relative; */
+  bottom: -1.2rem;
+  transition: transform 200ms ease-in-out;
+}
+label{
+  padding-left: 30px;
+}
+
+input {
+  /* position: relative; */
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  outline: none;
+  border: unset;
+  border-bottom: 1.5px solid rgb(48, 1, 1);
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  color: rgb(73, 9, 9);
+  z-index: 1;
+}
+
+/* button {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0.25em;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  transition: all 100ms ease-in-out;
+  background-color: rgb(225,225,255);
+}
+
+button:hover {
+  background-color: rgb(235,235,235);
+}
+
+a {
+  color: rgb(235, 235, 235);
+}
+
+a:hover {
+  color: rgb(215, 215, 215);
+}
+
+p {
+  text-align: center;
+} */
+
+#Input-Focus:focus, #Input-Focus:valid {
+  border-bottom: 2px solid rgb(44, 0, 0);
+}
+
+input:focus + label span, input:valid + label span {
+  color: rgb(139, 28, 28);
+  transform: translateY(-1rem);
+}
+
 
 
 

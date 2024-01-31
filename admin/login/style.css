@@ -50,7 +50,7 @@ body {
     color: #000000b8;
     letter-spacing: 5px;
     margin-top: 3em !important;
-    margin-left: 0.5em;
+    /* margin-left: 0.5em; */
     transform: translate(10%,-50%);
     text-transform:uppercase;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
