@@ -4,8 +4,8 @@
 }
 
 html {
-  position: fixed;
-  overflow: hidden;
+ position: fixed;
+ overflow: hidden;
   inset: 0;
 }
 
@@ -15,11 +15,9 @@ body {
 }
 
 .first {
-  transform: rotate(1800deg);
   background-color: #A07855FF;
   border-radius: 10px 900px 10px 0;
-
-}
+} 
 
 .text-img {
 
@@ -43,18 +41,19 @@ form {
   background-color: #A07855FF;
   /* margin-top: 12em !important; */
   margin-left: 100px;
-  margin-right: 20px;
+ margin-right: 20px;
   border-radius: 30px;
   width: 400px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.3);
 }
+
 .rathna-logo img {
   margin-left: 150px;
   width: 250px;
 }
-.gst-head {
+.gst-head{
   margin-left: 90px;
-  font-size: 4.5em;
+  font-size: 4.5em; 
   margin-top: 10px;
   color: #000000;
   text-shadow:
@@ -63,10 +62,13 @@ form {
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 5px;
 }
+
 .icon i {
+
   color: red;
   padding: 10px;
 }
+
 .form-field input {
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -78,6 +80,7 @@ form {
   outline: none;
   transition: all 0.2s;
 }
+
 .form-field .icon {
   position: absolute;
   background: white;
@@ -92,11 +95,13 @@ form {
   justify-content: center;
   border-radius: 20px;
 }
+
 .form-field {
   margin-bottom: 16px;
   width: 100%;
   position: relative;
 }
+
 .form-field .icon:after {
   content: "";
   display: block;
@@ -108,50 +113,41 @@ form {
   top: 8px;
   right: -20px;
 }
+
 .form-field input::placeholder {
   color: rgb(14, 14, 14);
 }
+
 .form-field input:hover,
 .form-field input:focus {
   background: white;
   color: #d61e2d;
   transition: all 0.2s;
 }
+
 .form-field input::placeholder {
   letter-spacing: 1px;
+
 }
+
 .form-field input:hover::placeholder {
   color: #000000b8;
   letter-spacing: 2px;
 }
+
 a.forgot-link {
   color: rgb(11, 11, 11);
   padding-left: 80px;
+  text-decoration: underline;
   letter-spacing: 1px;
   font-weight: 600;
-  transition: all 0.2s;
 }
-h2.password-head {
-  margin-left: 90px;
-  margin-top: 1em;
-  color: beige;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  font-size: 2.4vw;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-h2.password-head i {
-  color: #020202;
-  padding-left: 15px;
-}
-a.forgot-link:hover {
-  text-decoration: underline !important;
-  letter-spacing: 2px;
-}
+
 a {
   text-decoration: none !important;
   transition: all 0.2s;
 }
+
 a .login-btn {
   display: block;
   background-image: linear-gradient(109.6deg, rgba(83, 5, 5, 1) 11.2%, rgba(0, 0, 0, 1) 91.1%);
@@ -164,52 +160,14 @@ a .login-btn {
   font-weight: bold;
   margin-bottom: 32px;
   outline: none;
+
 }
-
-@keyframes paperPlaneAnimation {
-  0% {
-    transform: rotate(50deg) translateX(10px) translateY(0px);
-  }
-
-  25% {
-    transform: rotate(-20deg) translateX(320px) translateY(150px);
-  }
-
-  50% {
-    transform: rotate(180deg) translateX() translateY();
-  }
-
-  75% {
-    transform: rotate(270deg) translateX() translateY();
-  }
-
-  100% {
-    transform: rotate(360deg) translateX() translateY();
-  }
-}
-.fa-paper-plane {
-  animation: paperPlaneAnimation 6s linear infinite;
-}
-
-
-
-
-@media (max-width:867px) {
-  .first {
+@media (max-width:767px){
+  .first{
     display: none;
   }
-}
-@media (max-width:1057px) {
-  .text-img img {
-    margin-left: -50px !important;
-  }
-
-  .gst-head {
-    margin-left: -10px !important;
-  }
-
-  h2.password-head {
-    margin-left: -8px !important;
-    font-size: 2em !important;
-  }
+  /* .second{
+    margin-left: -1em !important;
+    
+  } */
 }

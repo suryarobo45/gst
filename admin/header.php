@@ -114,9 +114,9 @@
     <div class="container-xxl" id="#myDIV">
         <div class="row-side-bar m-2">
             <div class="side-head">
-                <a href="#" class=" side-btn"><i class="fa-solid fa-tachometer-alt"></i> Dashboard</a>
+                <a href="#" id="active-btn" class=" side-btn"><i class="fa-solid fa-tachometer-alt"></i> Dashboard</a>
             </div>
-            <div class="dropdown mt-3">
+            <div class="dropdown mt-3" id="active-btn">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-user"></i>
                     User
@@ -127,53 +127,38 @@
                 </ul>
             </div>
             <div class="side-head mt-3">
-                <a href="#" class="side-btn"><i class="fa-solid fa-tachometer-alt"></i> invoices</a>
+                <a href="#" id="active-btn" class="side-btn"><i class="fa-solid fa-tachometer-alt"></i> invoices</a>
             </div>
             <div class="side-head d-flex justify-content-start  mt-3">
-                <a type="button" class="btn side-btn" data-bs-toggle="modal" style="padding-right: 9.2em;" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="fa-solid fa-user"></i>password reset<div class="dot" id="redDot"></div></a>
+                <a type="button" id="active-btn" class="btn side-btn" data-bs-toggle="modal" style="padding-right: 9.2em;" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="fa-solid fa-user"></i>password reset<div class="dot" id="redDot"></div></a>
             </div>
             <div class="side-head mt-3">
-                <a href="#" class="side-btn"><i class="fas fa-file-alt"></i> GST Returns </a>
+                <a href="#" id="active-btn" class="side-btn"><i class="fas fa-file-alt"></i> GST Returns </a>
             </div>
             <div class="side-head mt-3">
-                <a href="#" class="side-btn"><i class="fas fa-users"></i>customer management </a>
+                <a href="#" id="active-btn" class="side-btn"><i class="fas fa-users"></i>customer management </a>
             </div>
             <div class="side-head mt-3">
-                <a href="#" class="side-btn"><i class="fas fa-cogs"></i>service management </a>
+                <a href="#" id="active-btn" class="side-btn"><i class="fas fa-cogs"></i>service management </a>
             </div>
             <div class="side-head mt-3">
-                <a href="#" class="side-btn"><i class="fas fa-calculator"></i>tax calculation </a>
+                <a href="#" id="active-btn" class="side-btn"><i class="fas fa-calculator"></i>tax calculation </a>
             </div>
             <div class="side-head mt-3">
-                <a href="#" class="side-btn"><i class="fas fa-chart-bar"></i>Reports </a>
+                <a href="#" id="active-btn" class="side-btn"><i class="fas fa-chart-bar"></i>Reports </a>
             </div>
             <div class="side-head mt-3">
-                <a href="#" class="side-btn"><i class="fas fa-bell"></i>notifications</a>
+                <a href="#" id="active-btn" class="side-btn"><i class="fas fa-bell"></i>notifications</a>
             </div>
             <div class="side-head mt-3">
-                <a href="#" class="side-btn"><i class="fa-solid fa-gear"></i>Settings</a>
+                <a href="#"id="active-btn" class="side-btn"><i class="fa-solid fa-gear"></i>Settings</a>
             </div>
             <div class="side-head mt-3">
-                <a href="#" class="side-btn"><i class="fa-solid fa-right-from-bracket"></i>help</a>
+                <a href="#"id="active-btn" class="side-btn"><i class="fa-solid fa-right-from-bracket"></i>help</a>
             </div>
             <div class="side-head mt-3">
-                <a href="#" class="side-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-right-from-bracket"></i>LOGOUT</a>
+                <a href="#"id="active-btn" class="side-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-right-from-bracket"></i>LOGOUT</a>
             </div>
-            
-            <!-- <div class="">
-            <a href=""> 
-              <div class="side-option-1">
-               <li class='sub-menu' ><i class="" style="color: #470700;font-size: 2em;"></i><a class="settings-text" href='#settings'><div class='fa fa-caret-right' onclick="myFunction(this)"  style="padding-left: 10px;"></div>Settings</a>
-                  <ul>
-                      <li><a href='registerpanel.php' onclick="alert('link clicked')">Account</a></li>
-                      <li><a href='#settings'>Profile</a></li>
-                      <li><a href='#settings'>Password</a></li>
-                      <li><a href='#settings'>Notification</a></li>
-                  </ul>
-               </li>
-              </div>
-            </a>
-            </div> -->
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                 <div class="offcanvas-header" id="log-cont">
                     <h5 class="offcanvas-title" id="offcanvasScrollingLabel" style="margin-top: 5em;"> <br>CONFIRMATION!</h5>
@@ -213,9 +198,9 @@
                                         <label for="recipient-name" class="col-form-label">department</label>
                                         <div class="box-2">Robotics</div>
                                     </div>
-                                    <div class="col-2 "> <button type="button" class="btn btn-success btn-secondary accept-btn">Accepted</button></div>
+                                    <div class="col-2 "> <button type="button" class="btn btn-success btn-secondary accept-btn">Accept </button></div>
                                     <div class="col-2">
-                                        <button type="button" class="btn btn-danger btn-primary reject-btn">Rejected</button>
+                                        <button type="button" class="btn btn-danger btn-primary reject-btn">Reject</button>
                                     </div>
                                 </form>
                             </div>
@@ -235,9 +220,9 @@
                                 <label for="recipient-name" class="col-form-label">department</label>
                                 <div class="box-2"></div>
                             </div>
-                            <div class="col-2"> <button type="button" class="btn btn-success btn-secondary accept-btn">Accepted</button></div>
+                            <div class="col-2"> <button type="button" class="btn btn-success btn-secondary accept-btn">Accept</button></div>
                             <div class="col-2">
-                                <button type="button" class="btn btn-danger btn-primary reject-btn">Rejected</button>
+                                <button type="button" class="btn btn-danger btn-primary reject-btn">Reject</button>
                             </div>
                         </form>
                     </div>
@@ -255,9 +240,9 @@
                                 <label for="recipient-name" class="col-form-label">department</label>
                                 <div class="box-2"></div>
                             </div>
-                            <div class="col-2"> <button type="button" class="btn btn-success btn-secondary accept-btn">Accepted</button></div>
+                            <div class="col-2"> <button type="button" class="btn btn-success btn-secondary accept-btn">Accept</button></div>
                             <div class="col-2">
-                                <button type="button" class="btn btn-danger btn-primary reject-btn">Rejected</button>
+                                <button type="button" class="btn btn-danger btn-primary reject-btn">Reject</button>
                             </div>
                         </form>
                     </div>
@@ -275,9 +260,9 @@
                                 <label for="recipient-name" class="col-form-label">department</label>
                                 <div class="box-2"></div>
                             </div>
-                            <div class="col-2"> <button type="button" class="btn btn-success btn-secondary accept-btn">Accepted</button></div>
+                            <div class="col-2"> <button type="button" class="btn btn-success btn-secondary accept-btn">Accept</button></div>
                             <div class="col-2">
-                                <button type="button" class="btn btn-danger btn-primary reject-btn">Rejected</button>
+                                <button type="button" class="btn btn-danger btn-primary reject-btn">Reject</button>
                             </div>
                         </form>
                     </div>
@@ -295,9 +280,9 @@
                                 <label for="recipient-name" class="col-form-label">department</label>
                                 <div class="box-2"></div>
                             </div>
-                            <div class="col-2"> <button type="button" class="btn btn-success btn-secondary accept-btn">Accepted</button></div>
+                            <div class="col-2"> <button type="button" class="btn btn-success btn-secondary accept-btn">Accept</button></div>
                             <div class="col-2">
-                                <button type="button" class="btn btn-danger btn-primary reject-btn">Rejected</button>
+                                <button type="button" class="btn btn-danger btn-primary reject-btn">Reject</button>
                             </div>
                         </form>
                     </div>

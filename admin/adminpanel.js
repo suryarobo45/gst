@@ -1,29 +1,6 @@
 
 
-//droptown toogle show
-// function toggleShow () {
-//   var el = document.getElementById("box");
-//   el.classList.toggle("show");
-// }
-// $('.sub-menu ul').hide();
-// $(".sub-menu a").click(function () {
-// $(this).parent(".sub-menu").children("ul").slideToggle("100");
 
-// });
-
-// $(document).ready(function () {
-//   // Hide all sub-menu ul elements initially
-//   $('.sub-menu ul').hide();
-
-//   // Add a click event listener to each ".sub-menu a" element
-//   $(".sub-menu a").click(function (event) {
-//     // Prevent the default behavior of the anchor tag
-//     event.preventDefault();
-
-//     // Find the corresponding ul element and toggle its visibility
-//     $(this).siblings("ul").slideToggle("100");
-//   });
-// });
 
 
 //mobile hamburger toggle
@@ -49,15 +26,7 @@ $(function() {
     $(".menu-list .accordion-toggle").not(jQuery(this)).removeClass("active-tab").find(".menu-link").removeClass("active");
   });
 }); 
-function myFunction(x) {
-  x.classList.toggle("fa-caret-down");
-};
-// $(document).ready(function() {
-//   $("#hide").click(function(event) {
-//       event.preventDefault();
-//       $("#r").css("background-color", "blue");
-//   });
-// });
+
 $(document).ready(function() {
   $("#hide").click(function(event) {
       event.preventDefault();
@@ -70,40 +39,7 @@ $(document).ready(function() {
   });
 });
 
-// select option script
 
-// let select = document.querySelector('select');
-
-// select.addEventListener('focus', () => {
-//   select.size = 5; 
-//   select.classList.add('fadeIn'); 
-//   select.classList.remove('fadeOut');
-//   select.style.backgroundColor = '#FFF';
-// });
-
-// select.addEventListener('blur', () => {
-//   select.size = 1; 
-//   select.classList.add('fadeOut');
-//   select.classList.remove('fadeIn');
-//   select.style.backgroundColor = '#FFF';
-// });
-
-// select.addEventListener('change', () => {
-//   select.size = 1; 
-//   select.blur();
-//   select.style.backgroundColor = '#FFF';
-// });
-
-// select.addEventListener('mouseover', () => {
-//   if(select.size == 1){
-//      select.style.backgroundColor = 'rgb(247, 247, 247)';
-//   }
-// });
-// select.addEventListener('mouseout', () => {
-//   if(select.size == 1){
-//      select.style.backgroundColor = '#FFF';
-//   }
-// });
 
 
 document.getElementById('emailForm').addEventListener('submit', function(event) {
@@ -149,13 +85,13 @@ let select = document.querySelector("select");
         }
     });
 
-
-    // function Showreddot(){
-    //   const reddot = document.getElementById("redDot");
-    //   reddot.style.display = "block";
-    // }
-    function showRedDot() {
-      var redDot = document.getElementById("redDot");
-      redDot.style.display = "none";
+// password reset received external file to show the red dot
+ const receivedcontent = true;
+  const redDot = document.getElementById("redDot");
+  if(receivedcontent){
+    redDot.style.display = "block";
+  }else{
+    redDot.style.display = "none";
   }
 
+  //click event when i click the sidebar buttons
