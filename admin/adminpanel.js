@@ -94,4 +94,39 @@ let select = document.querySelector("select");
     redDot.style.display = "none";
   }
 
-  //click event when i click the sidebar buttons
+  function updateFileName() {
+    const fileInput = document.getElementById("xl-file");
+    const fileLabel = document.getElementById("xl-file-label");
+    const clearFileBtn = document.querySelector(".clear-file");
+
+    if (fileInput.files.length > 0) {
+        fileLabel.textContent = fileInput.files[0].name;
+        clearFileBtn.style.display = "inline-block";
+    } else {
+        fileLabel.textContent = "Choose file...";
+        clearFileBtn.style.display = "none";
+    }
+}
+
+function clearFileSelection() {
+    const fileInput = document.getElementById("xl-file");
+    const fileLabel = document.getElementById("xl-file-label");
+    const clearFileBtn = document.querySelector(".clear-file");
+
+    fileInput.value = ""; // Clear the file input
+    fileLabel.textContent = "Choose file...";
+    clearFileBtn.style.display = "none";
+}
+
+
+
+
+
+(function() {
+  // Bind Click event to the drop down navigation button
+  document.querySelector('.nav-button').addEventListener('click', function() {
+    /*  Toggle the CSS closed class which reduces the height of the UL thus 
+        hiding all LI apart from the first */
+    this.parentNode.parentNode.classList.toggle('closed')
+  }, false);
+})();

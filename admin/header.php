@@ -112,25 +112,28 @@
 </header>
 <div class="siderbar-section">
     <div class="container-xxl" id="#myDIV">
-        <div class="row-side-bar m-2">
+        <div class="row-side-bar ">
             <div class="side-head">
-                <a href="#" id="active-btn" class=" side-btn"><i class="fa-solid fa-tachometer-alt"></i> Dashboard</a>
+                <a href="#"  id="active-btn" class=" side-btn"><i class="fa-solid fa-tachometer-alt"></i> Dashboard</a>
             </div>
-            <div class="dropdown mt-3" id="active-btn">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-user"></i>
-                    User
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+           
+             <div class="dropdown smmoth-toggle" id="active-btn">
+            <nav>
+                <ul class="drop-down closed">
+                    <li><a href="#" class="nav-button"><i class="fa-solid fa-user" style="padding-right: 35px;"></i>User</a></li>
                     <li><a class="dropdown-item" href="outletslogin.php" data-bs-toggle="modal" data-bs-target="#myModal">outlets users</a></li>
                     <li><a class="dropdown-item" href="managementlogin.php" data-bs-toggle="modal" data-bs-target="#myModal2">management users</a></li>
                 </ul>
-            </div>
+            </nav>
+            </div> 
             <div class="side-head mt-3">
                 <a href="#" id="active-btn" class="side-btn"><i class="fa-solid fa-tachometer-alt"></i> invoices</a>
             </div>
             <div class="side-head d-flex justify-content-start  mt-3">
                 <a type="button" id="active-btn" class="btn side-btn" data-bs-toggle="modal" style="padding-right: 9.2em;" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="fa-solid fa-user"></i>password reset<div class="dot" id="redDot"></div></a>
+            </div>
+            <div class="side-head mt-3">
+                <a href="xlupload.php" id="active-btn" class="side-btn"><i class="fa-solid fa-file-import"></i>XL Upload </a>
             </div>
             <div class="side-head mt-3">
                 <a href="#" id="active-btn" class="side-btn"><i class="fas fa-file-alt"></i> GST Returns </a>
@@ -151,13 +154,13 @@
                 <a href="#" id="active-btn" class="side-btn"><i class="fas fa-bell"></i>notifications</a>
             </div>
             <div class="side-head mt-3">
-                <a href="#"id="active-btn" class="side-btn"><i class="fa-solid fa-gear"></i>Settings</a>
+                <a href="#" id="active-btn" class="side-btn"><i class="fa-solid fa-gear"></i>Settings</a>
             </div>
             <div class="side-head mt-3">
-                <a href="#"id="active-btn" class="side-btn"><i class="fa-solid fa-right-from-bracket"></i>help</a>
+                <a href="#" id="active-btn" class="side-btn"><i class="fa-solid fa-right-from-bracket"></i>help</a>
             </div>
             <div class="side-head mt-3">
-                <a href="#"id="active-btn" class="side-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-right-from-bracket"></i>LOGOUT</a>
+                <a href="#" id="active-btn" class="side-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-right-from-bracket"></i>LOGOUT</a>
             </div>
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                 <div class="offcanvas-header" id="log-cont">
@@ -305,84 +308,84 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-               <form action="">
-               <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="mb-3">
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fa-solid fa-user-pen fa-xl" style="color: #ffffff;"></i></span>
-                                <input id="Input-Focus" class="form-control" type="text" placeholder="Name" required />
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-user-pen fa-xl" style="color: #ffffff;"></i></span>
+                                    <input id="Input-Focus" class="form-control" type="text" placeholder="Name" required />
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-1"></div>
                     </div>
-                    <div class="col-md-1"></div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="mb-2">
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fa-solid fa-envelope fa-xl" style="color: #ffffff;"></i></span>
-                                <input id="Input-Focus" type="email" name="email" placeholder="Email" class="form-control" required />
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="mb-2">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-envelope fa-xl" style="color: #ffffff;"></i></span>
+                                    <input id="Input-Focus" type="email" name="email" placeholder="Email" class="form-control" required />
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-1"></div>
                     </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-11 col-11">
-                        <div class="select-section">
-                            <div class="input-group">
-                                <span class="input-group-text" style="margin-left: 5.5em;"><i class="fa-solid fa-hand-point-right fa-xl" style="color: #ffffff;"></i></span>
-                                <select size="1">
-                                    <option class="first-select" value=""><i class="fa-regular fa-hand-point-right"></i>Select admin control access</option>
-                                    <option value="1">Management Administrator</option>
-                                    <option value="2">Accountant Administrator</option>
-                                </select>
+                    <div class="row">
+                        <div class="col-md-11 col-11">
+                            <div class="select-section">
+                                <div class="input-group">
+                                    <span class="input-group-text" style="margin-left: 5.5em;"><i class="fa-solid fa-hand-point-right fa-xl" style="color: #ffffff;"></i></span>
+                                    <select size="1">
+                                        <option class="first-select" value=""><i class="fa-regular fa-hand-point-right"></i>Select admin control access</option>
+                                        <option value="1">Management Administrator</option>
+                                        <option value="2">Accountant Administrator</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-1"></div>
                     </div>
-                    <div class="col-md-1"></div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="mb-3 mt-5">
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i></span>
-                                <input id="Input-Focus" class="input form-control" type="text" name="username" placeholder="Username" required />
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="mb-3 mt-5">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i></span>
+                                    <input id="Input-Focus" class="input form-control" type="text" name="username" placeholder="Username" required />
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-1"></div>
                     </div>
-                    <div class="col-md-1"></div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="mb-3">
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fa-solid fa-eye fa-xl" style="color: #ffffff;"></i></span>
-                                <input id="Input-Focus" type="password" placeholder="Password" class="form-control" required />
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-eye fa-xl" style="color: #ffffff;"></i></span>
+                                    <input id="Input-Focus" type="password" placeholder="Password" class="form-control" required />
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-1"></div>
                     </div>
-                    <div class="col-md-1"></div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <div class="mb-3">
-                            <button class="btn signup-btn"  value="Submit" type="submit">Sign Up</button>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <button class="btn signup-btn" value="Submit" type="submit">Sign Up</button>
+                            </div>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
-                    <div class="col-md-4"></div>
-                </div>
-               </form>
+                </form>
             </div>
         </div>
     </div>
@@ -416,11 +419,11 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <div class="mb-2">
-                            <form action=""id="emailForm">
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fa-solid fa-envelope fa-xl" style="color: #ffffff;"></i></span>
-                                <input id="Input-Focus" type="email" name="email" placeholder="Email" title=" please enter the valid email"pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"  class="form-control" required />
-                            </div>
+                            <form action="" id="emailForm">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-envelope fa-xl" style="color: #ffffff;"></i></span>
+                                    <input id="Input-Focus" type="email" name="email" placeholder="Email" title=" please enter the valid email" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" class="form-control" required />
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -433,7 +436,7 @@
                         <div class="mb-3 mt-3">
                             <div class="input-group">
                                 <span class="input-group-text"><i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i></span>
-                                <input id="Input-Focus" class="input form-control" type="text" name="username" placeholder="Username" title="please Enter The Name" pattern="[A-Za-z\s]+"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-class="custom-tooltip"  required />
+                                <input id="Input-Focus" class="input form-control" type="text" name="username" placeholder="Username" title="please Enter The Name" pattern="[A-Za-z\s]+" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-class="custom-tooltip" required />
                             </div>
                         </div>
                     </div>

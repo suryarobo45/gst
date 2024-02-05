@@ -86,6 +86,54 @@ span.input-group-text {
   margin-left: -8em;
   height: 60px;
 }
+nav {margin-top: 40px; }
+
+
+/* Drop Down Styles
+================================ */
+nav .drop-down {
+  list-style: none; 
+  overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
+  height: 172px; 
+  /* background-color: #34495e; */
+  font-family: Arial;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  margin-left: -60px;
+  -webkit-transition: height 0.3s ease;
+          transition: height 0.3s ease;
+}
+nav ul li a.dropdown-item{
+background-color: #afaab8;
+color: #000000;
+width: 100%;
+padding-left: 10px;
+}
+nav .drop-down.closed {
+  height: 43px;
+}
+nav .drop-down.closed:hover {
+  background-color: rgb(148, 216, 13);
+}
+nav:hover.drop-down.closed.nav-btn{
+  display: none !important;
+} 
+
+nav .drop-down li a {
+  display: block;
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px; /* Larger touch target area */
+}
+
+nav .drop-down li:first-child a:after {
+  content: "\25BC";
+  float: right;
+  margin-left: -30px; /* Excessive -margin to bring link text back to center */
+  margin-right: 5px;
+}
 
 .btn.btn-secondary.dropdown-toggle i {
   padding-right: 20px;
@@ -111,7 +159,13 @@ span.input-group-text {
   width: 310px;
   margin-top: -0.5em !important;
 }
+a.dropdown-item {
+padding-left: 60px !important;
+}
 
+.smmoth-toggle{
+  margin-top: -2em;
+}
 .dropdown-item {
   color: white;
   padding-left: 25px;
@@ -204,7 +258,8 @@ span.input-group-text {
 .side-head i {
   padding-right: 15px;
 }
-#active-btn.active{
+
+#active-btn.active {
   background-color: #020202;
 }
 
@@ -643,7 +698,7 @@ input {
   height: 8px;
   background-color: red;
   border-radius: 50%;
-  display:none;
+  display: none;
 }
 
 #Input-Focus::placeholder {
@@ -850,4 +905,89 @@ font-size: 14px;
     overflow-x: scroll !important;
     overflow-y: scroll;
   }
+}
+
+
+/* xl-upload */
+
+button.upload-btn {
+  background-color: rgb(148, 216, 13);
+  color: #000000;
+}
+
+button.upload-btn:hover {
+  background-color: rgb(120, 167, 27);
+  color: #000000;
+}
+
+.upload-container {
+  width: 82%;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#xl-file {
+  display: none;
+}
+
+label#xl-file-label.xl-file-label{
+  color: rgb(71, 1, 1);
+  cursor: pointer;
+  border-radius: 5px !important;
+  margin-top: 8px;
+  padding: 10px 20px;
+  margin-left: -10px;
+  font-size: 18px;
+  background-color: rgb(240, 240, 240);
+  border: 0.1px solid white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+.xl-import-btn {
+  background-color: rgb(148, 216, 13);
+  color: #000000;
+  padding: 3px 18px;
+  border: none;
+  letter-spacing: 1px;
+  border-radius:5px;
+  cursor: pointer;
+
+}
+
+.xl-import-btn:hover {
+  background-color: rgb(120, 167, 27);
+  color: #000000;
+
+}
+
+.file-container {
+  position: relative;
+  display: inline-block;
+}
+
+#xl-file {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+
+
+.clear-file {
+  position: absolute;
+  padding: 2px 1px;
+  font-size: 18px;
+  top: 10px;
+  right: 1px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
 }

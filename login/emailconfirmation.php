@@ -22,7 +22,7 @@
                   <img class="img-fluid" src="media/Rathna_Group_text.png" alt="">
                 </div>
                 <h1 class="gst-head ">GST Portal</h1>
-                <h2 class="password-head">email confirmation process <i class="fa-solid fa-plane-departure"></i></h2>
+                <h2 class="password-head">email confirmation process <i class="fa-regular fa-paper-plane"></i></h2>
               </div>
             </div>
           </div>
