@@ -14,10 +14,14 @@
 
 <body>
     <style>
+        body{
+            overflow-x: hidden !important;
+        }
         .cal-head {
-            color: blueviolet;
+            color: rgb(22, 102, 35);
             font-family: fantasy;
             letter-spacing: 2px;
+            text-align: center;
         }
 
         .btn {
@@ -515,13 +519,13 @@
     <div class="row">
 
         <div class="col-lg-12 main ">
-
+<video src="./Jungle cal.mp4" autoplay ></video>
 
             <div class="row mt-5">
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="cal-head mt-5 mb-4 text-center ">calendar</h1>
+                            <h1 class="cal-head mt-1  "> Jungle calendar</h1>
                             <div class="content  p-3 m-2 mt-1">
                                 <div class="row mt-3 mb-4">
                                 </div>
@@ -530,22 +534,22 @@
                                         <div class="calendar" id="mainCalendar">
                                             <div class="overlay ">
                                                 <div class="header mt-5">
-                                                    <div class="col-lg-2">
+                                                    <div class="col-lg-4">
                                                         <button class="btn prev-btn rounded-5" id="prevBtn"><i
                                                                 class="fa-solid fa-hand-point-left fa-xl "></i></button>
-
+                                
                                                     </div>
-                                                    <div class="col-lg-6">
+                                                    <div class="col-lg-4">
                                                         <h1 class="monthYear" id="monthYear"></h1>
                                                     </div>
-
+                                
                                                     <div class="col-lg-4">
-
+                                
                                                         <button class="btn next-btn float-end rounded-5" id="nextBtn"><i
                                                                 class="fa-solid fa-hand-point-right fa-xl"></i></button>
                                                     </div>
                                                     <!-- <div class="col-lg-12"><button class="btn today-btn rounded-5 text-white">Today</button></div> -->
-
+                                
                                                 </div>
                                                 <div class="days p-2 text-center ">
                                                     <div class="day">Sun</div>
@@ -564,123 +568,87 @@
                                                     <div class="date" data-day="5">5</div>
                                                     <div class="date" data-day="6">6</div>
                                                 </div>
-                                                <i class="fa-solid fa-circle-plus fa-3x fixed-bottom mb-4" type="button"
-                                                    data-bs-target="#EventModal" title="Add New Event"
-                                                    data-bs-toggle="modal" data-bs-placement="top"></i>
+                                                <i class="fa-solid fa-circle-plus fa-3x fixed-bottom mb-4" type="button" data-bs-target="#EventModal"
+                                                    title="Add New Event" data-bs-toggle="modal" data-bs-placement="top"></i>
                                                 <div class="col-lg-12">
-                                                    <div class="modal fade " id="EventModal" tabindex="-1"
-                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade " id="EventModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                        aria-hidden="true">
                                                         <div class="modal-dialog">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
-                                                                    <h3 class="modal-title-head text-success ms-5"
-                                                                        id="exampleModalLabel">Add
-                                                                        New Event<i
-                                                                            class="fa-solid fa-hand-holding-heart ms-3"></i>
+                                                                    <h3 class="modal-title-head text-success ms-5" id="exampleModalLabel">Add
+                                                                        New Event<i class="fa-solid fa-hand-holding-heart ms-3"></i>
                                                                     </h3>
-                                                                    <button type="button" class="btn-close p-2"
-                                                                        data-bs-dismiss="modal"
+                                                                    <button type="button" class="btn-close p-2" data-bs-dismiss="modal"
                                                                         aria-label="Close"></button>
                                                                 </div>
                                                                 <div class="modal-body ">
                                                                     <div id="calendarContainer">
                                                                         <form id="eventForm">
-                                                                            <input type="text"
-                                                                                class="form-control event-head-input p-3 rounded-5"
-                                                                                id="Event-name"
-                                                                                placeholder="Event Name*" required>
-                                                                            <label for="start-date"
-                                                                                class="col-form-label start-date">Event
+                                                                            <input type="text" class="form-control event-head-input p-3 rounded-5"
+                                                                                id="Event-name" placeholder="Event Name*" required>
+                                                                            <label for="start-date" class="col-form-label start-date">Event
                                                                                 Start
                                                                                 Date*</label>
-                                                                            <input type="date"
-                                                                                class="form-control event-start-date p-3 rounded-5"
+                                                                            <input type="date" class="form-control event-start-date p-3 rounded-5"
                                                                                 id="start-date">
-                                                                            <label for="end-date"
-                                                                                class="col-form-label start-date">Event
+                                                                            <label for="end-date" class="col-form-label start-date">Event
                                                                                 End
                                                                                 Date*</label>
-                                                                            <input type="date"
-                                                                                class="form-control event-start-date p-3 rounded-5"
+                                                                            <input type="date" class="form-control event-start-date p-3 rounded-5"
                                                                                 id="end-date">
-                                                                            <h5
-                                                                                class="pick-color text-center text-success mb-4">
-                                                                                Choose Fav Color<i
-                                                                                    class="fa-solid fa-hands-holding-circle ms-3"></i>
+                                                                            <h5 class="pick-color text-center text-success mb-4">
+                                                                                Choose Fav Color<i class="fa-solid fa-hands-holding-circle ms-3"></i>
                                                                             </h5>
                                                                             <div class="row">
                                                                                 <!-- Add your color options here -->
-                                                                                <div
-                                                                                    class="col-lg-12 pick-color-box p-4 rounded-3">
+                                                                                <div class="col-lg-12 pick-color-box p-4 rounded-3">
                                                                                     <div class="row">
                                                                                         <div class="col-lg-1">
-                                                                                            <input type="radio"
-                                                                                                id="redColor"
-                                                                                                name="color"
+                                                                                            <input type="radio" id="redColor" name="color"
                                                                                                 class="red-bg">
                                                                                         </div>
-                                                                                        <div class="col-lg-3"> <label
-                                                                                                for="redColor"
+                                                                                        <div class="col-lg-3"> <label for="redColor"
                                                                                                 class="me-5 color-text">NoColor</label>
                                                                                         </div>
                                                                                         <div class="col-lg-1">
-                                                                                            <input type="radio"
-                                                                                                id="greenColor"
-                                                                                                class="green-bg"
-                                                                                                name="color"
-                                                                                                value="#09c923">
+                                                                                            <input type="radio" id="greenColor" class="green-bg"
+                                                                                                name="color" value="#09c923">
                                                                                         </div>
-                                                                                        <div class="col-lg-3"><label
-                                                                                                for="greenColor"
+                                                                                        <div class="col-lg-3"><label for="greenColor"
                                                                                                 class="color-text">Green</label>
                                                                                         </div>
                                                                                         <div class="col-lg-1">
-                                                                                            <input type="radio"
-                                                                                                id="orangeColor"
-                                                                                                class="orange-bg"
-                                                                                                name="color"
-                                                                                                value="#c99c09">
+                                                                                            <input type="radio" id="orangeColor" class="orange-bg"
+                                                                                                name="color" value="#c99c09">
                                                                                         </div>
-                                                                                        <div class="col-lg-3"><label
-                                                                                                for="orangeColor"
+                                                                                        <div class="col-lg-3"><label for="orangeColor"
                                                                                                 class="color-text">Orange</label>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="row">
                                                                                         <div class="col-lg-1">
-                                                                                            <input type="radio"
-                                                                                                id="blueColor"
-                                                                                                class="blue-bg"
-                                                                                                name="color"
-                                                                                                value="#1c09c9">
-
+                                                                                            <input type="radio" id="blueColor" class="blue-bg"
+                                                                                                name="color" value="#1c09c9">
+                                
                                                                                         </div>
                                                                                         <div class="col-lg-3">
-                                                                                            <label for="blueColor"
-                                                                                                class="color-text">Blue</label>
+                                                                                            <label for="blueColor" class="color-text">Blue</label>
                                                                                         </div>
                                                                                         <div class="col-lg-1">
-                                                                                            <input type="radio"
-                                                                                                id="violetColor"
-                                                                                                class="violet-bg"
-                                                                                                name="color"
-                                                                                                value="blueviolet">
-
+                                                                                            <input type="radio" id="violetColor" class="violet-bg"
+                                                                                                name="color" value="blueviolet">
+                                
                                                                                         </div>
-                                                                                        <div class="col-lg-3"> <label
-                                                                                                for="violetColor"
+                                                                                        <div class="col-lg-3"> <label for="violetColor"
                                                                                                 class="color-text">Violet</label>
                                                                                         </div>
                                                                                         <div class="col-lg-1">
-                                                                                            <input type="radio"
-                                                                                                id="YellowColor"
-                                                                                                class="yellow-bg"
-                                                                                                name="color"
-                                                                                                value="Yellow">
-
+                                                                                            <input type="radio" id="YellowColor" class="yellow-bg"
+                                                                                                name="color" value="Yellow">
+                                
                                                                                         </div>
-                                                                                        <div class="col-lg-3"> <label
-                                                                                                for="violetColor"
+                                                                                        <div class="col-lg-3"> <label for="violetColor"
                                                                                                 class=" color-text">Yellow</label>
                                                                                         </div>
                                                                                     </div>
